@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/extensions, import/no-unresolved
 import { Article } from '../../../types';
 import './news.css';
 

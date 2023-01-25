@@ -1,3 +1,8 @@
+enum ResStatus {
+    Ok = 'ok',
+    Error = 'error',
+}
+
 export type Article = {
     source: {
         id: string;
@@ -20,4 +25,17 @@ export type ISource = {
     language: string;
     name: string;
     url: string;
+};
+
+type BaseResponse = {
+    status: ResStatus;
+};
+
+export type ISourcesResponse = BaseResponse & {
+    sources: ISource[];
+};
+
+export type IArticlesResponse = BaseResponse & {
+    totalResults: number;
+    articles: Article[];
 };
