@@ -1,5 +1,6 @@
 {
     "plugins": [
+        "webpack",
         "@typescript-eslint",
         "prettier",
         "import"
