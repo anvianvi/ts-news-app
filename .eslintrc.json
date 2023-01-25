@@ -3,7 +3,8 @@
         "webpack",
         "@typescript-eslint",
         "prettier",
-        "import"
+        "import",
+        "strict"
     ],
     "extends": [
         "plugin:prettier/recommended",
@@ -25,6 +26,10 @@
         "no-debugger": "off",
         "no-console": 0,
         "class-methods-use-this": "off",
-        "@typescript-eslint/no-explicit-any": "error"
+        "@typescript-eslint/no-explicit-any": "error",
+        "strict/strict": [
+            "error",
+            "global"
+        ]
     }
 }
