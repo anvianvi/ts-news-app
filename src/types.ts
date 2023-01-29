@@ -3,11 +3,13 @@ enum ResStatus {
     Error = 'error',
 }
 
+export type NameOfNewsSource = {
+    id: string;
+    name: string;
+};
+
 export type Article = {
-    source: {
-        id: string;
-        name: string;
-    };
+    source: NameOfNewsSource;
     author: string;
     title: string;
     description: string;

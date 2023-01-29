@@ -7,7 +7,7 @@ class Sources {
         const sourceItemTemp = document.querySelector<HTMLTemplateElement>('#sourceItemTemp');
 
         data.forEach((item) => {
-            if (sourceItemTemp != null) {
+            if (sourceItemTemp !== null) {
                 const sourceClone = sourceItemTemp.content.cloneNode(true) as HTMLElement;
 
                 const $sourceItemName = sourceClone.querySelector('.source__item-name');
