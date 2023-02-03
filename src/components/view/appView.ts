@@ -5,7 +5,7 @@ import Sources from './sources/sources';
 export class AppView {
     readonly news: News;
 
-    readonly sources: Sources;
+    private readonly sources: Sources;
 
     constructor() {
         this.news = new News();
