@@ -13,23 +13,38 @@ header h1 {
     font-weight: 800;
 }
 
-footer {
-    height: 100px;
+.main {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap: 20px;
 }
-footer .copyright {
+@media (width > 1100px) {
+    .main {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.copyright {
     font-size: 14px;
-    color: #333;
+    color: #444;
     text-align: center;
 }
-footer .copyright a {
-    color: #444;
-}
-footer .copyright a:hover {
+.copyright :hover {
     color: #555;
 }
-footer .copyright:before {
-    content: '©';
+
+.footer {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #30c5ff;
+}
+
+.rs-logo {
+    display: block;
+    width: 80px;
 }
